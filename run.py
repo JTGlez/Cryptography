@@ -3,6 +3,6 @@ import fileinput
 suma = 0
 
 for f in fileinput.input():
-    suma = suma + int(f)
+    suma = suma + float(f)
 
 print(suma)
