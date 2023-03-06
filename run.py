@@ -1,6 +1,7 @@
 import fileinput
  
-suma, suma2 = 0
+suma = 0
+suma2 = 0
 
 for f in fileinput.input():
     suma = suma + int(f)
