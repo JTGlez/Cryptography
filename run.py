@@ -1,16 +1,8 @@
 import fileinput
+ 
+suma = 0
 
-lines = []
+for f in fileinput.input():
+    suma = suma + f
 
-for line in fileinput.input():
-    lines.append(line)
-
-a = input()
-b = input()
-
-c = a + b
-
-def suma ():
-    return a + b
-    
-print(suma())
+print(suma)
