@@ -1,12 +1,11 @@
 import fileinput
  
 suma = 0
-suma2 = 0
 
 def es_numero(str):
     if str.replace('.', '').isdigit():
         return int(str)
-    else:
+    elif str.replace('.', '', 1).isdigit():
         return float(str)
 
 for f in fileinput.input():
